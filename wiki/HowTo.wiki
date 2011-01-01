@@ -1,4 +1,5 @@
 #summary How to use rssmii
+#labels Featured,Phase-Requirements,Phase-Deploy
 
 = Getting started =
   # Extract the archive you downloaded to your SD-Card. The archive represents the root of the SD-Card.
