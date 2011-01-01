@@ -17,7 +17,7 @@ Here you see a sample-"feeds-xml"-file:
 You can add as many feed-nodes as you want. The "name"-Attribute will be displayed on top of the message at the Wii-Messageboard, so it is recommended to cut that REALLY SHORT because there's hardly any space.
 
 = Launching rssmii =
-  # Launch rssmii in the Homebrew-Channel or any other launcher of your choice (I thought of custom channels, so launching this won't result in a CodeDump-Error on exit!)
+  # Launch rssmii in the Homebrew-Channel or any other launcher of your choice (I thought of custom channels, so launching this won't result in a !CodeDump-Error on exit!)
   # You see the RSS-Feeds listed in the "feeds.xml"
   # When you now press A, every previous subscriptions to RSS-Feeds will be overwritten by subscriptions to the Feeds listed in the "feeds.xml".
   # Everything's finished - You should now be receiving updates at those RSS-Feeds at the Wii-Messageboard!
