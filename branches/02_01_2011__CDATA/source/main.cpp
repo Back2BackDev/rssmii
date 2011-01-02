@@ -177,7 +177,7 @@ int load_feeds()
 		rewind (fp);
 
 		if (settings_size > 0) {
-			tree = mxmlLoadFile(NULL, fp, MXML_NO_CALLBACK);
+			tree = mxmlLoadFile(NULL, fp, MXML_OPAQUE_CALLBACK);
 			fclose(fp);
 			rss = mxmlFindElement(tree, tree, "rss", NULL, NULL, MXML_DESCEND);
 			if (rss == NULL) return -103;
