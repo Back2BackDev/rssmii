@@ -177,14 +177,14 @@ int load_feeds()
 		rewind (fp);
 
 		if (settings_size > 0) {
-			tree = mxmlLoadFile(NULL, fp, MXML_OPAQUE_CALLBACK);
+			tree = mxmlLoadFile(NULL, fp, MXML_NO_CALLBACK);
 			fclose(fp);
 			rss = mxmlFindElement(tree, tree, "rss", NULL, NULL, MXML_DESCEND);
 			if (rss == NULL) return -103;
 
 			for (node = mxmlFindElement(rss, rss, "feed", NULL, NULL, MXML_DESCEND); node != NULL; node = mxmlFindElement(node, rss, "feed", NULL, NULL, MXML_DESCEND))
 			{
-				const char * feedurl = mxmlElementGetAttr(node, "url");
+				const char * feedurl = node->value.opaque; //mxmlElementGetAttr(node, "url");
 				if (feedurl)
 				{
 					const char * sender = mxmlElementGetAttr(node, "name");
